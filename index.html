@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Vanilla Coding | Bootcamp Prep</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <img class="main-logo" src="./images/vc.png" alt="Vanilla Coding Logo" />
+
+    <section class="quiz-display">
+      <div class="quiz-info">
+        <img class="quiz-image" src="./images/quiz.png" alt="quiz-image" />
+        <div class="quiz-title">
+          <h1>JavaScript Card Quiz</h1>
+          <p>The test contains 20 questions</p>
+          <p>It's just a nice way to see how much you know, or don't know, about JavaScript.</p>
+          <p>You will get 5 point for each correct answer.</p>
+          <p>At the end of the Quiz, your total score will be displayed.</p>
+          <p>Maximum score is 100 points.</p>
+          <button class="start-button" type="button">START QUIZ</button>
+        </div>
+      </div>
+
+      <div class="quiz-start hidden">
+        <h2 class="quiz-question"></h2>
+        <div class="score-info">
+          <div>
+            남은문제 <span class="remains"></span>개
+          </div>
+          <div>
+            현재 스코어 <span class="score"></span>점
+          </div>
+        </div>
+        <div class="quiz-selection"></div>
+      </div>
+
+      <div class="quiz-restart hidden">
+        <div>
+          <h3>수고하셨습니다!</h3>
+          <p class="scoreline"></p>
+        </div>
+        <button class="restart-button" type="button">재시작</button>
+      </div>
+    </section>
+
+    <section class="quiz-result">
+      <p class="time"></p>
+      <p class="mark"></p>
+      <button class="next-button hidden" type="button">다음 문제</button>
+    </section>
+
+    <script src="./app/index.js"></script>
+  </body>
+</html>
